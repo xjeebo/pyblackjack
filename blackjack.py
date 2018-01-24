@@ -67,11 +67,11 @@ player.draw1(my_dict[card],card)
 print("Player:")
 player.printf()
 
-if player.num == 21:
+if player.num == 21:          # if the players hand total is 21 then print that they have won
 	print("You win!!!")
-	on = 0
-elif player.num < 21:
-	question = input("Hit or stand?(h,s): ")
+	on = 0                # disable the while loop 
+elif player.num < 21:         # allow the user to draw another card or not
+	question = input("Hit or stand?(h,s): ")  # if they pick to stand then the dealer will continue to draw until his hand is atleast a sum of  15
 elif player.num > 21:
 	player.num = player.num - 10
 	player.Ace = False
