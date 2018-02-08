@@ -77,7 +77,7 @@ elif player.num > 21:
 	player.Ace = False
 
 
-while on == 1:
+while on == 1: # loop forever until break
 
 	if question == 's' or question == 'S':
 
