@@ -82,7 +82,7 @@ while on == 1: # loop forever until break
 	if question == 's' or question == 'S':
 
 		os.system("clear")
-		if dealer.num < 16:
+		if dealer.num < 16:  # dealer will keep drawing until he has a hand greater than 15
 			card = values[random.randint(1,14)]
 			dealer.draw1(my_dict[card],card)
 			dealer.printf()
